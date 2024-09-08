@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwbpyafg5hjk3"
+path="res://.godot/imported/broken window.mp3-572546a1c6a64ee2499a0a9eea5a7651.mp3str"
+
+[deps]
+
+source_file="res://sfx/broken window.mp3"
+dest_files=["res://.godot/imported/broken window.mp3-572546a1c6a64ee2499a0a9eea5a7651.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

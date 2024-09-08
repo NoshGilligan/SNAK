@@ -1,0 +1,239 @@
+[gd_scene load_steps=17 format=3 uid="uid://fgrwq1kqpy67"]
+
+[ext_resource type="Texture2D" uid="uid://c2ih4asob3gxd" path="res://visuals/Untitled88_20240514204433.png" id="1_1ok13"]
+[ext_resource type="Texture2D" uid="uid://drf48iv74x5vr" path="res://visuals/Untitled79_20240408133722.png" id="2_ix8pn"]
+[ext_resource type="Script" path="res://Scripts/Movement.gd" id="3_go5ey"]
+[ext_resource type="Texture2D" uid="uid://cyq7sbyrqeie4" path="res://visuals/Untitled88_20240514205215.png" id="4_61ldx"]
+[ext_resource type="Texture2D" uid="uid://bkwun5bfj3ysp" path="res://visuals/SNAK office sprites_20240903200120.png" id="5_afuyq"]
+[ext_resource type="Script" path="res://Scripts/MapCamera2D.gd" id="5_cwf5s"]
+[ext_resource type="Script" path="res://Scripts/Cameras.gd" id="6_vb372"]
+[ext_resource type="Texture2D" uid="uid://fmntpew8syam" path="res://visuals/Cam1.png" id="8_tjq1q"]
+[ext_resource type="Texture2D" uid="uid://bvstx6xq1w1ug" path="res://visuals/SNAK_Placeholders_Karl.png" id="9_rto64"]
+[ext_resource type="Script" path="res://Scripts/KarlKill.gd" id="10_iiqn3"]
+[ext_resource type="Script" path="res://Scripts/Karl.gd" id="10_nll46"]
+[ext_resource type="AudioStream" uid="uid://d0efi8u0e6kcw" path="res://sfx/vine-boom.mp3" id="11_sqgiy"]
+[ext_resource type="Texture2D" uid="uid://d4ngdyopn3ao5" path="res://visuals/SNAK_Placeholders_Jacobin.png" id="12_tqme1"]
+[ext_resource type="Script" path="res://Scripts/TwinsKill.gd" id="13_vp1ut"]
+
+[sub_resource type="GDScript" id="GDScript_vqww1"]
+script/source = "extends Sprite2D
+
+
+func scroll():
+	$office.position -= (get_local_mouse_position() - $office.position).normalized() * 5
+
+
+func _on_office_pan_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_move_timer_timeout():
+	pass # Replace with function body.
+"
+
+[sub_resource type="GDScript" id="GDScript_355y6"]
+script/source = "extends TextureButton
+
+
+
+"
+
+[node name="Office" type="Node2D"]
+
+[node name="Desk" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("1_1ok13")
+
+[node name="office" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("2_ix8pn")
+script = SubResource("GDScript_vqww1")
+
+[node name="NightTimer" type="Timer" parent="."]
+wait_time = 60.0
+
+[node name="MoveTimer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+script = ExtResource("3_go5ey")
+
+[node name="StateTimer" type="Timer" parent="."]
+wait_time = 20.0
+autostart = true
+script = ExtResource("3_go5ey")
+
+[node name="computer" type="TextureButton" parent="."]
+z_index = 2
+z_as_relative = false
+offset_left = 95.0
+offset_top = -133.0
+offset_right = 917.0
+offset_bottom = 600.0
+texture_normal = ExtResource("4_61ldx")
+texture_hover = ExtResource("5_afuyq")
+stretch_mode = 3
+script = SubResource("GDScript_355y6")
+
+[node name="MapCamera2D" type="Camera2D" parent="."]
+limit_left = -1500
+limit_top = -720
+limit_right = 1500
+limit_bottom = -720
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("5_cwf5s")
+zoom_min = 1.0
+zoom_max = 1.0
+pan_speed = 1000.0
+pan_margin = 180.0
+pan_keyboard = false
+drag = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_vb372")
+
+[node name="Exit_Button" type="Button" parent="CanvasLayer/Control"]
+z_index = 1
+layout_mode = 0
+offset_left = 2163.0
+offset_top = 21.0
+offset_right = 2532.0
+offset_bottom = 166.0
+theme_override_font_sizes/font_size = 100
+text = "Exit"
+
+[node name="cameras" type="Sprite2D" parent="CanvasLayer/Control"]
+position = Vector2(1280, 720)
+texture = ExtResource("8_tjq1q")
+
+[node name="cam 1" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 190.0
+offset_bottom = 187.0
+text = "Cam 1"
+
+[node name="cam 2" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 190.0
+offset_bottom = 387.0
+text = "Cam 2"
+
+[node name="cam 3" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_top = 400.0
+offset_right = 190.0
+offset_bottom = 587.0
+text = "Cam 3"
+
+[node name="cam 4" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_top = 601.0
+offset_right = 190.0
+offset_bottom = 788.0
+text = "Cam 4"
+
+[node name="cam 5" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_top = 801.0
+offset_right = 190.0
+offset_bottom = 988.0
+text = "Cam 5
+"
+
+[node name="cam 6" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_top = 1001.0
+offset_right = 190.0
+offset_bottom = 1188.0
+text = "Cam 6"
+
+[node name="cam 7" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_top = 1201.0
+offset_right = 190.0
+offset_bottom = 1388.0
+text = "Cam 7
+"
+
+[node name="cam 8" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 1201.0
+offset_right = 390.0
+offset_bottom = 1388.0
+text = "Cam 8
+"
+
+[node name="karl_cams" type="Sprite2D" parent="CanvasLayer/Control"]
+z_index = 2
+position = Vector2(1001, 826)
+scale = Vector2(0.494444, 0.494444)
+texture = ExtResource("9_rto64")
+script = ExtResource("10_nll46")
+
+[node name="karlkill" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(0, 529)
+scale = Vector2(2.49884, 2.49884)
+texture = ExtResource("9_rto64")
+script = ExtResource("10_iiqn3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="karlkill"]
+stream = ExtResource("11_sqgiy")
+
+[node name="twinskill" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(0, 529)
+scale = Vector2(2.49884, 2.49884)
+texture = ExtResource("12_tqme1")
+script = ExtResource("13_vp1ut")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="twinskill"]
+stream = ExtResource("11_sqgiy")
+
+[node name="Button" type="Button" parent="."]
+z_index = 1
+offset_left = -1261.0
+offset_top = -703.0
+offset_right = -886.0
+offset_bottom = -522.0
+theme_override_font_sizes/font_size = 100
+text = "Karl Kill
+"
+
+[node name="Button2" type="Button" parent="."]
+z_index = 1
+offset_left = -1261.0
+offset_top = -508.0
+offset_right = -886.0
+offset_bottom = -327.0
+theme_override_font_sizes/font_size = 100
+text = "Twins Kill
+"
+
+[connection signal="timeout" from="NightTimer" to="MoveTimer" method="_on_night_timer_timeout"]
+[connection signal="timeout" from="MoveTimer" to="MoveTimer" method="_on_timeout"]
+[connection signal="timeout" from="MoveTimer" to="CanvasLayer/Control" method="_on_move_timer_timeout"]
+[connection signal="timeout" from="MoveTimer" to="CanvasLayer/Control/karl_cams" method="_on_move_timer_timeout"]
+[connection signal="timeout" from="StateTimer" to="CanvasLayer/Control/karl_cams" method="_on_state_timer_timeout"]
+[connection signal="pressed" from="computer" to="CanvasLayer/Control" method="_on_computer_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/Exit_Button" to="CanvasLayer/Control" method="_on_exit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/cam 1" to="CanvasLayer/Control" method="_on_cam_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/cam 2" to="CanvasLayer/Control" method="_on_cam_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/cam 3" to="CanvasLayer/Control" method="_on_cam_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/cam 4" to="CanvasLayer/Control" method="_on_cam_4_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/cam 5" to="CanvasLayer/Control" method="_on_cam_5_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/cam 6" to="CanvasLayer/Control" method="_on_cam_6_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/cam 7" to="CanvasLayer/Control" method="_on_cam_7_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/cam 8" to="CanvasLayer/Control" method="_on_cam_8_pressed"]
+[connection signal="pressed" from="Button" to="karlkill" method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="twinskill" method="_on_button_2_pressed"]

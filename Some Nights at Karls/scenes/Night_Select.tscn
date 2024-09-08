@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0aa0vb1jr7v"]
+
+[ext_resource type="Script" path="res://Scripts/NightSelectMenu.gd" id="1_gwj6h"]
+[ext_resource type="Script" path="res://Scripts/Night1select.gd" id="2_4p86q"]
+[ext_resource type="Script" path="res://Scripts/Night2.gd" id="3_tigpb"]
+[ext_resource type="Script" path="res://Scripts/Night3.gd" id="4_it52a"]
+[ext_resource type="Script" path="res://Scripts/Night4.gd" id="5_y035c"]
+
+[node name="Night_Select" type="Node2D"]
+
+[node name="BacktoMenu" type="Button" parent="."]
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 225.0
+offset_bottom = 114.0
+text = "Back to Menu"
+script = ExtResource("1_gwj6h")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1596.0
+offset_top = 11.0
+offset_right = 2545.0
+offset_bottom = 117.0
+theme_override_font_sizes/font_size = 100
+text = "Night Select"
+horizontal_alignment = 2
+autowrap_mode = 3
+
+[node name="Night1" type="Button" parent="."]
+offset_left = 17.0
+offset_top = 133.0
+offset_right = 268.0
+offset_bottom = 313.0
+theme_override_font_sizes/font_size = 40
+text = "Night 1"
+script = ExtResource("2_4p86q")
+
+[node name="Night2" type="Button" parent="."]
+offset_left = 20.0
+offset_top = 330.0
+offset_right = 271.0
+offset_bottom = 510.0
+theme_override_font_sizes/font_size = 40
+text = "Night 2"
+script = ExtResource("3_tigpb")
+
+[node name="Night3" type="Button" parent="."]
+offset_left = 21.0
+offset_top = 532.0
+offset_right = 272.0
+offset_bottom = 712.0
+theme_override_font_sizes/font_size = 40
+text = "Night 3"
+script = ExtResource("4_it52a")
+
+[node name="Night4" type="Button" parent="."]
+offset_left = 21.0
+offset_top = 737.0
+offset_right = 272.0
+offset_bottom = 917.0
+theme_override_font_sizes/font_size = 40
+text = "Night 4"
+script = ExtResource("5_y035c")
+
+[connection signal="pressed" from="BacktoMenu" to="BacktoMenu" method="_on_pressed"]
+[connection signal="pressed" from="Night1" to="Night1" method="_on_pressed"]
+[connection signal="pressed" from="Night2" to="Night2" method="_on_pressed"]
+[connection signal="pressed" from="Night3" to="Night3" method="_on_pressed"]
+[connection signal="pressed" from="Night4" to="Night4" method="_on_pressed"]
