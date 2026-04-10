@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bw7c43a2jxe6l"]
+
+[ext_resource type="Texture2D" uid="uid://jk5edcag0q0n" path="res://visuals/SNAK play.png" id="1_20j1f"]
+[ext_resource type="Script" path="res://scripts/main menu.gd" id="1_biev0"]
+[ext_resource type="Texture2D" uid="uid://bqqgwxoisnd35" path="res://visuals/SNAK extra.png" id="2_afptd"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_biev0")
+
+[node name="PlayButton" type="TextureButton" parent="."]
+z_index = 2
+offset_left = 39.0
+offset_top = 553.0
+offset_right = 239.0
+offset_bottom = 753.0
+texture_normal = ExtResource("1_20j1f")
+
+[node name="ExtrasButton" type="TextureButton" parent="."]
+z_index = 2
+offset_left = 39.0
+offset_top = 855.0
+offset_right = 239.0
+offset_bottom = 1055.0
+texture_normal = ExtResource("2_afptd")
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
