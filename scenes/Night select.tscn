@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://lwvi1htc4u48"]
+
+[ext_resource type="Texture2D" uid="uid://d0r2hvkjk3xt2" path="res://visuals/SNAK Night 1.png" id="1_3eky3"]
+[ext_resource type="Script" uid="uid://c61ukemacqwmv" path="res://scripts/night1_button.gd" id="2_fvi3t"]
+[ext_resource type="Texture2D" uid="uid://bpoajgi1ld8ev" path="res://visuals/SNAK back button.png" id="3_6jm8o"]
+[ext_resource type="Script" uid="uid://bjagascd21ev1" path="res://scripts/backbutton.gd" id="3_7g4ed"]
+
+[node name="Node2D" type="Node2D" unique_id=516869950]
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1178744843]
+offset_left = 34.0
+offset_right = 234.0
+offset_bottom = 200.0
+texture_normal = ExtResource("1_3eky3")
+script = ExtResource("2_fvi3t")
+
+[node name="Button" type="TextureButton" parent="." unique_id=2141740392]
+offset_left = 22.0
+offset_top = 498.0
+offset_right = 226.0
+offset_bottom = 698.0
+texture_normal = ExtResource("3_6jm8o")
+script = ExtResource("3_7g4ed")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

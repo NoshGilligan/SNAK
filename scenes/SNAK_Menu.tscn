@@ -1,0 +1,476 @@
+[gd_scene format=3 uid="uid://bw7c43a2jxe6l"]
+
+[ext_resource type="Texture2D" uid="uid://jk5edcag0q0n" path="res://visuals/SNAK play.png" id="1_20j1f"]
+[ext_resource type="Script" uid="uid://bwqvf1d2gx7b3" path="res://scripts/main menu.gd" id="1_biev0"]
+[ext_resource type="Texture2D" uid="uid://bqqgwxoisnd35" path="res://visuals/SNAK extra.png" id="2_afptd"]
+[ext_resource type="Texture2D" uid="uid://n07nccjyawn0" path="res://visuals/SNAK office background.png" id="4_2nbtu"]
+[ext_resource type="Texture2D" uid="uid://xm71r436nehx" path="res://visuals/Camera Tab.png" id="5_88x0l"]
+[ext_resource type="Texture2D" uid="uid://imbskop2f8m7" path="res://visuals/Commputer.png" id="6_edx8y"]
+[ext_resource type="Texture2D" uid="uid://cccn042c867eg" path="res://visuals/ButtonDarkerRed.png" id="7_mirs4"]
+[ext_resource type="Texture2D" uid="uid://b5cnjcksjp6fa" path="res://visuals/ButtonRed.png" id="8_n8dj4"]
+[ext_resource type="Script" uid="uid://cgmtd2p7a08pj" path="res://scripts/cam_button_1.gd" id="9_5bqpr"]
+[ext_resource type="Texture2D" uid="uid://ctjiogb0e5f6n" path="res://visuals/CameraSwitch1.png" id="10_rmffo"]
+[ext_resource type="Texture2D" uid="uid://boxd1lk5ixq2q" path="res://visuals/CameraSwitch2.png" id="11_aneqp"]
+[ext_resource type="Texture2D" uid="uid://b7qyd2m55ttpf" path="res://visuals/KindaBlack.png" id="12_4cma2"]
+[ext_resource type="Texture2D" uid="uid://d12l1rcyaq7am" path="res://visuals/SNAK_OfficeDesk1.png" id="13_3jgpq"]
+[ext_resource type="Texture2D" uid="uid://cdjpkfcrhcdxa" path="res://visuals/LockButtonBase.png" id="14_rictf"]
+[ext_resource type="Texture2D" uid="uid://l7lpakha27cj" path="res://visuals/LockButtonL1.png" id="15_5nd84"]
+[ext_resource type="Texture2D" uid="uid://x6el52vdqi15" path="res://visuals/LockButtonL4.png" id="16_70uja"]
+[ext_resource type="Texture2D" uid="uid://cjnlecqwfe71g" path="res://visuals/LockButtonR1.png" id="17_q2v7s"]
+[ext_resource type="Texture2D" uid="uid://qsgrpd3enhek" path="res://visuals/LockButtonR4.png" id="18_a4hf0"]
+[ext_resource type="Texture2D" uid="uid://dewrbxfqxo7ck" path="res://visuals/SNAK office doorL Open1.png" id="19_sx1sq"]
+[ext_resource type="Texture2D" uid="uid://d36c8cfyo5qib" path="res://visuals/SNAK office doorL Open2.png" id="20_5ujqh"]
+[ext_resource type="Texture2D" uid="uid://e4jk7ofm3eed" path="res://visuals/SNAK office doorL Open3.png" id="21_ntmr0"]
+[ext_resource type="Texture2D" uid="uid://cspqonc1m4pox" path="res://visuals/SNAK office doorL.png" id="22_cywih"]
+[ext_resource type="Script" uid="uid://dahoakjvl5qtu" path="res://scripts/left_door.gd" id="23_onb50"]
+[ext_resource type="Texture2D" uid="uid://yakj3egn7jue" path="res://visuals/SNAK office doorR Open2.png" id="24_ihter"]
+[ext_resource type="Texture2D" uid="uid://d35j46nr13gyk" path="res://visuals/SNAK office doorR Open3.png" id="25_huon5"]
+[ext_resource type="Texture2D" uid="uid://o5xsjtnds5sb" path="res://visuals/SNAK office doorR Open.png" id="26_nk1ay"]
+[ext_resource type="Texture2D" uid="uid://dde4q0a2fehsw" path="res://visuals/SNAK office doorR.png" id="27_yomss"]
+[ext_resource type="Texture2D" uid="uid://cjme1ebgpmonq" path="res://visuals/SNAK office doorR1.png" id="28_qlvlb"]
+[ext_resource type="Texture2D" uid="uid://cqc7dcfl4pe5x" path="res://visuals/SNAK office doorR2.png" id="29_21jbt"]
+[ext_resource type="Texture2D" uid="uid://dx8pdhgv2h2l3" path="res://visuals/SNAK office doorR3.png" id="30_2xt4h"]
+[ext_resource type="Texture2D" uid="uid://bboka5x2tfya1" path="res://visuals/SNAK office doorR4.png" id="31_rsnck"]
+[ext_resource type="Script" uid="uid://chb7mvvsw2hmi" path="res://scripts/right_door.gd" id="32_yuddg"]
+[ext_resource type="Texture2D" uid="uid://d03mu5rfwsbmq" path="res://visuals/SNAK office forground.png" id="33_ib4xr"]
+[ext_resource type="Texture2D" uid="uid://lm5qpyvctxb3" path="res://visuals/SNAK office forground2.png" id="34_rgq3p"]
+[ext_resource type="Script" uid="uid://bu8ebhrpwkpvf" path="res://scripts/camera_2d.gd" id="35_i3epc"]
+[ext_resource type="Texture2D" uid="uid://kkj36yhnbcv3" path="res://visuals/SnakCoffeeButton1.png" id="36_3jgpq"]
+[ext_resource type="Texture2D" uid="uid://evdlyscy604k" path="res://visuals/Coffee Machine.png" id="36_5bqpr"]
+[ext_resource type="Texture2D" uid="uid://d0r2hvkjk3xt2" path="res://visuals/SNAK Night 1.png" id="36_n8dj4"]
+[ext_resource type="Script" uid="uid://c61ukemacqwmv" path="res://scripts/night1_button.gd" id="37_5bqpr"]
+[ext_resource type="Texture2D" uid="uid://brdibpsifej1n" path="res://visuals/SnakCoffeeButton2.png" id="37_rictf"]
+[ext_resource type="Texture2D" uid="uid://dp3mpeos6qdfv" path="res://visuals/SnakCoffeeButton3.png" id="38_5nd84"]
+[ext_resource type="Texture2D" uid="uid://bpoajgi1ld8ev" path="res://visuals/SNAK back button.png" id="38_rmffo"]
+[ext_resource type="Texture2D" uid="uid://dg486pxhsb220" path="res://visuals/SnakCoffeeButton4.png" id="39_70uja"]
+[ext_resource type="Script" uid="uid://bjagascd21ev1" path="res://scripts/backbutton.gd" id="39_aneqp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e071d"]
+load_path = "res://.godot/imported/ButtonDarkerRed.png-e7586839caee268b0136ca1eaf26ea3c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_drkl2"]
+load_path = "res://.godot/imported/ButtonDarkerRed.png-e7586839caee268b0136ca1eaf26ea3c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4sc4h"]
+load_path = "res://.godot/imported/ButtonDarkerRed.png-e7586839caee268b0136ca1eaf26ea3c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yu7k4"]
+load_path = "res://.godot/imported/ButtonDarkerRed.png-e7586839caee268b0136ca1eaf26ea3c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c3vfu"]
+load_path = "res://.godot/imported/ButtonDarkerRed.png-e7586839caee268b0136ca1eaf26ea3c.ctex"
+
+[sub_resource type="Shortcut" id="Shortcut_2h3m2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tg6kf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_sx1sq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5ujqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ntmr0")
+}],
+"loop": 1,
+"name": &"Open",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_cywih")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kasft"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_ihter")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_huon5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_nk1ay")
+}],
+"loop": 1,
+"name": &"Open_GlassBroken",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_yomss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_qlvlb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_21jbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_2xt4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_rsnck")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=704684067]
+script = ExtResource("1_biev0")
+
+[node name="PlayButton" type="TextureButton" parent="." unique_id=817237143]
+unique_name_in_owner = true
+z_index = 2
+offset_left = -1398.0
+offset_top = -232.0
+offset_right = -1198.0
+offset_bottom = -32.0
+texture_normal = ExtResource("1_20j1f")
+
+[node name="ExtrasButton" type="TextureButton" parent="." unique_id=267419131]
+unique_name_in_owner = true
+z_index = 2
+offset_left = -1398.0
+offset_top = 70.0
+offset_right = -1198.0
+offset_bottom = 270.0
+texture_normal = ExtResource("2_afptd")
+
+[node name="OfficeBackground" type="Sprite2D" parent="." unique_id=459947078]
+unique_name_in_owner = true
+z_index = -2
+texture = ExtResource("4_2nbtu")
+
+[node name="CameraTab" type="Sprite2D" parent="." unique_id=1135779285]
+unique_name_in_owner = true
+z_index = 4
+position = Vector2(330, 720)
+texture = ExtResource("5_88x0l")
+
+[node name="Commputer" type="Sprite2D" parent="." unique_id=909834105]
+unique_name_in_owner = true
+z_index = 9
+position = Vector2(-1047, 217)
+texture = ExtResource("6_edx8y")
+
+[node name="CamButton1" type="TextureButton" parent="." unique_id=159107376]
+unique_name_in_owner = true
+z_index = 3
+offset_left = -23.0
+offset_top = 660.0
+offset_right = 49.0
+offset_bottom = 687.0
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+script = ExtResource("9_5bqpr")
+
+[node name="CamButton2" type="TextureButton" parent="." unique_id=1786457813]
+unique_name_in_owner = true
+z_index = 3
+offset_left = -51.0
+offset_top = 733.0
+offset_right = 21.0
+offset_bottom = 760.0
+texture_normal = SubResource("CompressedTexture2D_e071d")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton3" type="TextureButton" parent="." unique_id=388894964]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 79.0
+offset_top = 660.0
+offset_right = 151.0
+offset_bottom = 687.0
+texture_normal = SubResource("CompressedTexture2D_drkl2")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton4" type="TextureButton" parent="." unique_id=337503390]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 50.0
+offset_top = 733.0
+offset_right = 122.0
+offset_bottom = 760.0
+texture_normal = SubResource("CompressedTexture2D_4sc4h")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton5" type="TextureButton" parent="." unique_id=619938560]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 184.0
+offset_top = 660.0
+offset_right = 256.0
+offset_bottom = 687.0
+texture_normal = SubResource("CompressedTexture2D_yu7k4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton6" type="TextureButton" parent="." unique_id=1999034902]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 156.0
+offset_top = 733.0
+offset_right = 228.0
+offset_bottom = 760.0
+texture_normal = SubResource("CompressedTexture2D_c3vfu")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton7" type="TextureButton" parent="." unique_id=914469246]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 296.0
+offset_top = 660.0
+offset_right = 368.0
+offset_bottom = 687.0
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton8" type="TextureButton" parent="." unique_id=1817311327]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 268.0
+offset_top = 733.0
+offset_right = 340.0
+offset_bottom = 760.0
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton9" type="TextureButton" parent="." unique_id=854642977]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 400.0
+offset_top = 660.0
+offset_right = 472.0
+offset_bottom = 687.0
+shortcut = SubResource("Shortcut_2h3m2")
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton10" type="TextureButton" parent="." unique_id=841190397]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 373.0
+offset_top = 733.0
+offset_right = 445.0
+offset_bottom = 760.0
+shortcut = SubResource("Shortcut_2h3m2")
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton11" type="TextureButton" parent="." unique_id=1739151740]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 511.0
+offset_top = 660.0
+offset_right = 583.0
+offset_bottom = 687.0
+shortcut = SubResource("Shortcut_2h3m2")
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton12" type="TextureButton" parent="." unique_id=2015791911]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 483.0
+offset_top = 733.0
+offset_right = 555.0
+offset_bottom = 760.0
+shortcut = SubResource("Shortcut_2h3m2")
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton13" type="TextureButton" parent="." unique_id=221636473]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 616.0
+offset_top = 660.0
+offset_right = 688.0
+offset_bottom = 687.0
+shortcut = SubResource("Shortcut_2h3m2")
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamButton14" type="TextureButton" parent="." unique_id=1980670366]
+unique_name_in_owner = true
+z_index = 3
+offset_left = 588.0
+offset_top = 733.0
+offset_right = 660.0
+offset_bottom = 760.0
+shortcut = SubResource("Shortcut_2h3m2")
+texture_normal = ExtResource("7_mirs4")
+texture_pressed = ExtResource("8_n8dj4")
+stretch_mode = 0
+
+[node name="CamSwitch" type="TextureButton" parent="." unique_id=1934606655]
+unique_name_in_owner = true
+z_index = 5
+offset_left = 735.0
+offset_top = 751.0
+offset_right = 778.0
+offset_bottom = 794.0
+toggle_mode = true
+texture_normal = ExtResource("10_rmffo")
+texture_pressed = ExtResource("11_aneqp")
+
+[node name="CamerasBackground" type="Sprite2D" parent="." unique_id=1925036608]
+unique_name_in_owner = true
+z_index = 1
+position = Vector2(-1047, 18.499985)
+scale = Vector2(50.345, 36.5)
+texture = ExtResource("12_4cma2")
+
+[node name="SnakOfficeDesk1" type="Sprite2D" parent="." unique_id=669495183]
+unique_name_in_owner = true
+z_index = 1
+position = Vector2(0, 735)
+texture = ExtResource("13_3jgpq")
+
+[node name="LockButtonBase" type="Sprite2D" parent="." unique_id=1451205506]
+unique_name_in_owner = true
+z_index = 2
+position = Vector2(-341, 682)
+texture = ExtResource("14_rictf")
+
+[node name="LockButtonL" type="TextureButton" parent="." unique_id=97044377]
+unique_name_in_owner = true
+z_index = 2
+offset_left = -441.0
+offset_top = 544.0
+offset_right = -241.0
+offset_bottom = 659.0
+texture_normal = ExtResource("15_5nd84")
+texture_pressed = ExtResource("16_70uja")
+stretch_mode = 3
+
+[node name="LockButtonR" type="TextureButton" parent="." unique_id=1932978463]
+unique_name_in_owner = true
+z_index = 2
+offset_left = -441.0
+offset_top = 659.0
+offset_right = -241.0
+offset_bottom = 793.0
+texture_normal = ExtResource("17_q2v7s")
+texture_pressed = ExtResource("18_a4hf0")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="LeftDoor" type="AnimatedSprite2D" parent="." unique_id=360056222]
+unique_name_in_owner = true
+z_index = -1
+z_as_relative = false
+sprite_frames = SubResource("SpriteFrames_tg6kf")
+script = ExtResource("23_onb50")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LeftDoor" unique_id=595813743]
+unique_name_in_owner = true
+root_node = NodePath("../..")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="LeftDoor" unique_id=1097803323]
+unique_name_in_owner = true
+position = Vector2(0, 26)
+
+[node name="Right Door" type="AnimatedSprite2D" parent="." unique_id=1006685993]
+unique_name_in_owner = true
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_kasft")
+script = ExtResource("32_yuddg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Right Door" unique_id=1583237518]
+
+[node name="SnakOfficeForground" type="Sprite2D" parent="." unique_id=186710634]
+unique_name_in_owner = true
+texture = ExtResource("33_ib4xr")
+
+[node name="SnakOfficeForground2" type="Sprite2D" parent="." unique_id=1909193922]
+unique_name_in_owner = true
+texture = ExtResource("34_rgq3p")
+
+[node name="CoffeeMachine" type="Sprite2D" parent="." unique_id=1254447786]
+z_index = 9
+position = Vector2(1329, 432)
+texture = ExtResource("36_5bqpr")
+
+[node name="BeanButton" type="TextureButton" parent="CoffeeMachine" unique_id=1323230239]
+offset_left = -247.0
+offset_top = -160.0
+offset_right = -141.0
+offset_bottom = -50.0
+texture_normal = ExtResource("36_3jgpq")
+
+[node name="WaterButton" type="TextureButton" parent="CoffeeMachine" unique_id=184623123]
+offset_left = -113.0
+offset_top = -160.0
+offset_right = -7.0
+offset_bottom = -50.0
+texture_normal = ExtResource("37_rictf")
+
+[node name="CreamButton" type="TextureButton" parent="CoffeeMachine" unique_id=835464684]
+offset_left = 21.0
+offset_top = -160.0
+offset_right = 127.0
+offset_bottom = -50.0
+texture_normal = ExtResource("38_5nd84")
+
+[node name="Coffe Button" type="TextureButton" parent="CoffeeMachine" unique_id=1800403412]
+offset_left = 162.0
+offset_top = -160.0
+offset_right = 268.0
+offset_bottom = -50.0
+texture_normal = ExtResource("39_70uja")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=643684684]
+unique_name_in_owner = true
+position = Vector2(-400, 0)
+offset = Vector2(-400, 0)
+limit_left = -1800
+limit_top = -1000
+limit_right = 1400
+limit_bottom = 1000
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("35_i3epc")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=2007493703]
+unique_name_in_owner = true
+z_index = 3
+offset_left = -460.0
+offset_top = -322.0
+offset_right = -260.0
+offset_bottom = -122.0
+texture_normal = ExtResource("36_n8dj4")
+script = ExtResource("37_5bqpr")
+
+[node name="Button" type="TextureButton" parent="." unique_id=813766586]
+unique_name_in_owner = true
+offset_left = -472.0
+offset_top = 176.0
+offset_right = -268.0
+offset_bottom = 376.0
+texture_normal = ExtResource("38_rmffo")
+script = ExtResource("39_aneqp")
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
